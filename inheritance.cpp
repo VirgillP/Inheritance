@@ -12,7 +12,7 @@ class A{
     }
 };
 class subA : public A{
-} objecto ;
+} object0 ;
 
 class B{
     protected:
@@ -47,7 +47,7 @@ class subC : public C{
 
 int main(){
 
-objecto.get("I");
+object0.get("I");
 object1->output("I");
 object2.output("I");
 
