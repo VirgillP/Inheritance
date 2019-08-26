@@ -1,5 +1,6 @@
 # Inheritance
-This is just a sample program
+Updated this sample program. 
+I have outputted the public, protected and private members with output functions within each of the classess.
 Sub classes inheriting capabilities of parent classes;
 objects of subclasses can have the same capabilities as the subclasses's partentclasses.
 With this program sample each subclass is immediately given an object name, object0, object1, object2. Nothing special here.
