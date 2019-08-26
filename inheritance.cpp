@@ -1,3 +1,4 @@
+//Sample program
 #include <iostream>
 #include <string>
 class A{
@@ -11,9 +12,10 @@ class A{
         	return a;
     	}
 	void output_val_a(void){
-	std::cout << a << " am a A class" <<std::endl;
+	std::cout << a << " am a A class and have been called by the sub class." <<std::endl;
 	}
 };
+
 class subA : public A{
 }object0;
 
@@ -26,7 +28,7 @@ class B{
         this -> b = par;
     }
  void output_val_b(void) { 
-        std::cout << b << " am a B class" <<std::endl;
+        std::cout << b << " am a B class and have been called by the sub class." <<std::endl;
     }          
 };
 
@@ -46,12 +48,13 @@ class C{
     }	
 
   void output_val_c(void){
-        std::cout << c << " am a C class"<< std::endl;
+        std::cout << c << " am a C class and have been called by the sub class."<< std::endl;
     }
 };
 
 class subC : public C{
 }object2;
+
 
 int main(){
 
