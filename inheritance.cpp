@@ -4,15 +4,19 @@ class A{
     public:
         std::string a;
 
-    void put(std::string par) { 
-        a = par;
+    	void put(std::string par) { 
+        	a = par;
          }
-	void get(std::string par) { 
-        std::cout << par << " am a A class" <<std::endl;
-    }
+	std::string get(void) { 
+        	return a;
+    	}
+	void output(void){
+	std::cout << a << " am a A class" <<std::endl;
+	}
 };
 class subA : public A{
 } object0 ;
+
 
 class B{
     protected:
@@ -21,8 +25,8 @@ class B{
     void put(std::string par) { 
         this -> b = par;
     }
- void output(std::string par) { 
-        std::cout << par << " am a B class" <<std::endl;
+ void output(void) { 
+        std::cout << b << " am a B class" <<std::endl;
     }          
 };
 
@@ -37,8 +41,12 @@ class C{
     void AccessClassC(std::string par){
         c = par;
     }
-  void output(std::string par){
-        std::cout << par << " am a C class"<< std::endl;
+    std::string GetClassC(void){
+    	return c;
+    }	
+
+  void outputClassC(void){
+        std::cout << c << " am a C class"<< std::endl;
     }
 };
 
@@ -47,9 +55,13 @@ class subC : public C{
 
 int main(){
 
-object0.get("I");
-object1->output("I");
-object2.output("I");
+object0.put("I");
+object0.output();
+object1->put("I");
+object1->output();
+object2.AccessClassC("I");
+object2.outputClassC();
+
 
     return 0;
 }
