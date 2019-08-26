@@ -15,7 +15,7 @@ class A{
 	}
 };
 class subA : public A{
-} object0 ;
+}object0;
 
 
 class B{
@@ -51,7 +51,7 @@ class C{
 };
 
 class subC : public C{
-}object2;;
+}object2;
 
 int main(){
 
